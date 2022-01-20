@@ -1,0 +1,37 @@
+h2{
+    text-align: center;
+}
+
+.presentation {
+    text-align: justify;
+    align-items: center;
+    width: 30%;
+    margin: auto
+  }
+
+.page2 {
+    text-align: justify;
+    align-items: center;
+    width: 30%;
+    margin: auto    
+}
+
+.titre{
+    text-align: center;
+    font-style: italic;
+}
+
+a{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img{
+    width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="16x16" href="logo.png">
+    <title>Comité international de la paresse</title>
+</head>
+
+<body>
+    <div Align=center>
+        <h1><img src="./static/logo.png" alt="" width="15%"></h1>
+        <h2>Comité international de la paresse</h2>
+        <p>Parce que ne rien faire doit est un droit de l'Homme</p>
+        <a href="./index.html"> Retour à la page d'accueil</a>
+    </div>
+    <form action="{{url_for('add')}}" method="get">
+        <div Align=Center>
+            <p>
+                <label for="nom">Veuillez saisir votre nom</label>
+                <input type="text" id="Nom" name="Nom" size="30" value="Saisir ici" required /> <br>
+                <label for="prenom">Veuillez saisir votre prénom</label>
+                <input type="text" id="Prenom" name="Prenom" size="30" value="Saisir ici" required /> <br>
+                <input type="radio" id="monsieur" name="Genre" value="h" checked />
+                <label for="monsieur">M.</label>
+                <input type="radio" id="madame" name="Genre" value="f" required />
+                <label for="madame">Mme.</label>
+            </p>
+        </div>
+        <div Align=Center>
+            <p>Veuillez sélectionner le montant de votre choix :</p>
+            <div Align=Center>
+                <input type="radio" id="contactChoice1" name="Montant" value="5" required>
+                <label for="contactChoice1">5€</label>
+
+                <input type="radio" id="contactChoice2" name="Montant" value="10" required>
+                <label for="contactChoice2">10€</label>
+
+                <input type="radio" id="contactChoice3" name="Montant" value="50" required>
+                <label for="contactChoice3">50€</label>
+            </div>
+
+
+            <p>
+                <label for="Numero_carte">Numéro de carte bancaire</label>
+                <input type="text" id="Numero_carte" name="Numero_carte" size="30" value="" required />
+                <br>
+                <label for="Expiration_carte">Date d'expiration de la carte</label>
+                <input type="text" in="Expiration_carte" name="Expiration_carte" size="1" value="" required />
+            </p>
+
+            <div>
+                <input type="checkbox" id="Newsletter" name="Newsletter" value="Newsletter" required>
+                <label for="subscribeNews">J'accepte les conditions générales de vente</label>
+            </div>
+
+
+            <button type="submit">Valider mon don!</button>
+
+    </form>
+    <div class="mobile-visible mobile-only">
+
+        <div class="campaign-module-right payment-logos">
+            <h3><i class="fa fa-lock"></i>Plateforme de paiement 100% sécurisée</h3>
+            <p>Toutes les informations bancaires pour traiter ce paiement sont totalement sécurisées. Grâce au
+                cryptage SSL de vos données bancaires, vous êtes assurés de la fiabilité de vos transactions sur
+                CIP.</p>
+            <div>
+                <img src="./static/logo_CB.jpg" class="img-responsive" alt="Carte bleue" width=5% />
+                <img src="./static/logo_visa.jpg" class="img-responsive" alt="VISA" width=7% />
+                <img src="./static/logo_MC.png" class="img-responsive" alt="Mastercard" width=7% />
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
